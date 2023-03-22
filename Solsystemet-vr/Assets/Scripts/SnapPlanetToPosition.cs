@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class SnapPlanetToPosition : MonoBehaviour
 {
     public Rigidbody planetRigibody;
     public Transform planetTransform;
+    public GameObject planetPosition;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,7 +17,10 @@ public class SnapPlanetToPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Keyboard.current[Key.M].wasReleasedThisFrame)
+        {
+            
+        }
     }
 
     void OnTriggerStay(Collider other){

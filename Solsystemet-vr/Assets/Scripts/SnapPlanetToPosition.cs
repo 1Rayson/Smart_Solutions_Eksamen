@@ -8,6 +8,8 @@ public class SnapPlanetToPosition : MonoBehaviour
     public Rigidbody planetRigibody;
     public Transform planetTransform;
     public GameObject planetPosition;
+
+    private bool inCorrectPlace = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,9 @@ public class SnapPlanetToPosition : MonoBehaviour
     {
         if (Keyboard.current[Key.M].wasReleasedThisFrame)
         {
-            
+            if(inCorrectPlace){
+                Debug.Log(transform.parent.name + " is in correct position");
+            }
         }
     }
 
@@ -29,8 +33,20 @@ public class SnapPlanetToPosition : MonoBehaviour
             planetRigibody.velocity = new Vector3(0, 0, 0);
             Vector3 orbitTransform = other.transform.position;
             planetTransform.position = orbitTransform;
+
+            if(other.gameObject == planetPosition){
+                inCorrectPlace = true;
+            }
         }
-    }/* 
+    }
+    
+    void OnTriggerExit(Collider other){
+        if(other.tag == "PlanetOrbit"){
+            inCorrectPlace = false;
+        }
+    }
+
+    /* 
     void OnTriggerExit(Collider other){
         if(other.tag == "PlanetOrbit"){
             planetRigibody.useGravity = true;

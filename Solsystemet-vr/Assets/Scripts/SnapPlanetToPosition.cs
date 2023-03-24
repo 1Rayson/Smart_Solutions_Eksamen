@@ -8,6 +8,8 @@ public class SnapPlanetToPosition : MonoBehaviour
     public Rigidbody planetRigibody;
     public Transform planetTransform;
     public GameObject planetPosition;
+    public GameObject planetToActivate;
+    public GameObject ballSpawn;
 
     private bool inCorrectPlace = false;
     // Start is called before the first frame update
@@ -19,16 +21,18 @@ public class SnapPlanetToPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current[Key.M].wasReleasedThisFrame)
+        if(inCorrectPlace)
         {
-            if(inCorrectPlace){
-                Debug.Log(transform.parent.name + " is in correct position");
-            }
+            planetToActivate.SetActive(true);
+        }
+        else 
+        {
+            planetToActivate.SetActive(false);
         }
     }
 
     void OnTriggerStay(Collider other){
-        if(other.tag == "PlanetOrbit"){
+        if(other.tag == "PlanetSocket"){
             planetRigibody.useGravity = false;
             planetRigibody.velocity = new Vector3(0, 0, 0);
             Vector3 orbitTransform = other.transform.position;
@@ -38,18 +42,17 @@ public class SnapPlanetToPosition : MonoBehaviour
                 inCorrectPlace = true;
             }
         }
+
+        if(other.tag == "BallRespawner"){
+            Vector3 spawnTransform = ballSpawn.transform.position;
+            planetTransform.position = spawnTransform;
+            planetRigibody.velocity = new Vector3(0, -1, 0);
+        }
     }
     
     void OnTriggerExit(Collider other){
-        if(other.tag == "PlanetOrbit"){
+        if(other.tag == "PlanetSocket"){
             inCorrectPlace = false;
         }
     }
-
-    /* 
-    void OnTriggerExit(Collider other){
-        if(other.tag == "PlanetOrbit"){
-            planetRigibody.useGravity = true;
-        }
-    } */
 }

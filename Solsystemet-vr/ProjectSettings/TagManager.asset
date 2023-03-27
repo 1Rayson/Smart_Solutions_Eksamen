@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PlanetSocket
   - BallRespawner
+  - PlanetBalls
   layers:
   - Default
   - TransparentFX

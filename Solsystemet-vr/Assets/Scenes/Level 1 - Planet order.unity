@@ -155,6 +155,11 @@ Transform:
   m_Father: {fileID: 1621389063}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &30341326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 699442904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &64059517
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -220,8 +225,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (2)
+      value: Saturn-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &64059518 stripped
@@ -320,7 +341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8243481825124240662, guid: 76559214026fdc6489dadca7b955f9c2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8243481825124240662, guid: 76559214026fdc6489dadca7b955f9c2, type: 3}
       propertyPath: m_LocalScale.x
@@ -376,6 +397,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76559214026fdc6489dadca7b955f9c2, type: 3}
+--- !u!1 &139705567 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 152365327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &139705572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139705567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 1406748321}
+  planetCone: {fileID: 468171319}
 --- !u!1 &145164633
 GameObject:
   m_ObjectHideFlags: 0
@@ -468,7 +514,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 83.65, y: -180, z: -157.334}
 --- !u!1001 &152365327
 PrefabInstance:
@@ -499,11 +545,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.476
+      value: -0.416
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.442
+      value: 0.406
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -535,8 +581,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (7)
+      value: Mercury-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &152365328 stripped
@@ -639,7 +701,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &226226147
 GameObject:
@@ -658,7 +720,7 @@ GameObject:
   - component: {fileID: 226226154}
   m_Layer: 0
   m_Name: Neptun-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -676,7 +738,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &226226149
 MonoBehaviour:
@@ -906,9 +968,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 226226151}
   planetTransform: {fileID: 226226148}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1074811782}
   planetToActivate: {fileID: 665415779}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1 &256502501
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,8 +1083,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket
+      value: Neptun-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &317095689 stripped
@@ -1105,6 +1185,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fb64e51162772fb47b0bc43e22a172a9, type: 3}
   m_PrefabInstance: {fileID: 347695241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &372565013 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 64059517}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &388406619
 PrefabInstance:
@@ -1217,6 +1302,31 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.14, y: 0.53, z: 0.06}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &446771394 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1812911131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &446771399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446771394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 2137782242}
+  planetCone: {fileID: 1926514315}
 --- !u!1 &459851339
 GameObject:
   m_ObjectHideFlags: 0
@@ -1246,7 +1356,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &463810371
 GameObject:
@@ -1280,6 +1390,16 @@ Transform:
   m_Father: {fileID: 1621389063}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &468171319 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 152365327}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &623529877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1212068829}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &665415779
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,8 +1620,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (1)
+      value: Uranus-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &699442905 stripped
@@ -1526,7 +1662,7 @@ GameObject:
   - component: {fileID: 756014416}
   m_Layer: 0
   m_Name: Jupiter-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1544,7 +1680,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &756014411
 MonoBehaviour:
@@ -1774,9 +1910,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 756014413}
   planetTransform: {fileID: 756014410}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1929576660}
   planetToActivate: {fileID: 1110865681}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1 &757712413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1794,7 +1932,7 @@ GameObject:
   - component: {fileID: 757712420}
   m_Layer: 0
   m_Name: Mars-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1812,7 +1950,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &757712415
 MonoBehaviour:
@@ -2042,9 +2180,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 757712417}
   planetTransform: {fileID: 757712414}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1313137449}
   planetToActivate: {fileID: 1588775438}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
+--- !u!1 &834210413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 317095688}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &846496723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2094,7 +2239,7 @@ GameObject:
   - component: {fileID: 861864489}
   m_Layer: 0
   m_Name: Saturn-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2112,7 +2257,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &861864484
 MonoBehaviour:
@@ -2342,9 +2487,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 861864486}
   planetTransform: {fileID: 861864483}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1435321256}
   planetToActivate: {fileID: 463810371}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1 &969693836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2422,6 +2569,56 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.34, y: 0.16, z: 2.6}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1041944805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1687439972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1041944810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041944805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 1711969496}
+  planetCone: {fileID: 1462641060}
+--- !u!1 &1074811782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 317095688}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1074811787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074811782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 226226147}
+  planetCone: {fileID: 834210413}
 --- !u!1 &1110865681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2454,6 +2651,31 @@ Transform:
   m_Father: {fileID: 1621389063}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1124081483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 699442904}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1124081488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124081483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 2147429110}
+  planetCone: {fileID: 30341326}
 --- !u!1 &1157169225
 GameObject:
   m_ObjectHideFlags: 0
@@ -2491,7 +2713,7 @@ Transform:
   - {fileID: 699442905}
   - {fileID: 317095689}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: -0.698, z: 0}
 --- !u!1 &1166245878
 GameObject:
@@ -2521,16 +2743,16 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 757712414}
-  - {fileID: 2147429111}
-  - {fileID: 1711969497}
-  - {fileID: 756014410}
-  - {fileID: 226226148}
   - {fileID: 1406748322}
-  - {fileID: 861864483}
   - {fileID: 2137782243}
+  - {fileID: 1711969497}
+  - {fileID: 757712414}
+  - {fileID: 756014410}
+  - {fileID: 861864483}
+  - {fileID: 2147429111}
+  - {fileID: 226226148}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1176304658
 GameObject:
@@ -2566,7 +2788,7 @@ Transform:
   - {fileID: 698785633}
   - {fileID: 256502502}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1001 &1212068829
 PrefabInstance:
@@ -2633,8 +2855,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (4)
+      value: Mars-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &1212068830 stripped
@@ -2728,6 +2966,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4526619657957936920, guid: e95a0f88593614efb9b14f48b2223527, type: 3}
   m_PrefabInstance: {fileID: 1260719484}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1277992223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1770102746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1313137449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1212068829}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1313137454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313137449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 757712413}
+  planetCone: {fileID: 623529877}
 --- !u!1 &1406748321
 GameObject:
   m_ObjectHideFlags: 0
@@ -2745,7 +3013,7 @@ GameObject:
   - component: {fileID: 1406748328}
   m_Layer: 0
   m_Name: Mercury-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2758,12 +3026,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406748321}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.167, y: 0.699, z: 0.443}
+  m_LocalPosition: {x: 4.9, y: 3.47, z: -1.24}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1406748323
 MonoBehaviour:
@@ -2772,7 +3040,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406748321}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ad34abafad169848a38072baa96cdb2, type: 3}
   m_Name: 
@@ -2924,7 +3192,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -2993,9 +3261,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 1406748325}
   planetTransform: {fileID: 1406748322}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 139705567}
   planetToActivate: {fileID: 1910901764}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
+--- !u!1 &1435321256 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 64059517}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1435321261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435321256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 861864482}
+  planetCone: {fileID: 372565013}
+--- !u!1 &1462641060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1687439972}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1508788323
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3144,7 +3444,7 @@ Transform:
   - {fileID: 969693837}
   - {fileID: 665415780}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631856151
 PrefabInstance:
@@ -3350,7 +3650,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1687439972
 PrefabInstance:
@@ -3381,7 +3681,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.494
+      value: -0.443
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3417,8 +3717,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (5)
+      value: Earth-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &1687439973 stripped
@@ -3566,7 +3882,7 @@ GameObject:
   - component: {fileID: 1711969503}
   m_Layer: 0
   m_Name: Earth-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3814,9 +4130,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 1711969500}
   planetTransform: {fileID: 1711969497}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1041944805}
   planetToActivate: {fileID: 846496723}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1001 &1739798046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3960,8 +4278,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (3)
+      value: Jupiter-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &1770102747 stripped
@@ -3969,6 +4303,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
   m_PrefabInstance: {fileID: 1770102746}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1799931621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799931623}
+  - component: {fileID: 1799931622}
+  m_Layer: 0
+  m_Name: Wrong_sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1799931622
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799931621}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4701cb8fbc68d41468d6ff99947732b5, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1799931623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799931621}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -87.37388, y: -73.356125, z: -22.277775}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1812911131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3994,15 +4456,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.03
+      value: 1.055
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.48
+      value: -0.447
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.35
+      value: 0.312
       objectReference: {fileID: 0}
     - target: {fileID: 3328146424527714703, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4034,8 +4496,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3638015075818363534, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
       propertyPath: m_Name
-      value: Planet-socket (6)
+      value: Venus-socket
       objectReference: {fileID: 0}
+    - target: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Hologram-cone
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Name
+      value: Socket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_TagString
+      value: PlanetSocket
+      objectReference: {fileID: 0}
+    - target: {fileID: 7930616627187802859, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
 --- !u!4 &1812911132 stripped
@@ -4075,6 +4553,164 @@ Transform:
   m_Father: {fileID: 1621389063}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1921531823
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921531825}
+  - component: {fileID: 1921531824}
+  m_Layer: 0
+  m_Name: Correct_sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1921531824
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921531823}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cf66963e593fe17448ac0f8b9b202381, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1921531825
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921531823}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -87.88642, y: -73.5837, z: -21.903187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1926514315 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4988480737780116552, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1812911131}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1929576660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7930616627187802856, guid: 2dd9c2a89542614428172bb5b018cef3, type: 3}
+  m_PrefabInstance: {fileID: 1770102746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1929576665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1929576660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  neutral: {fileID: 2100000, guid: 391d77832eb0ac84db44a964b44b2304, type: 2}
+  correct: {fileID: 2100000, guid: 045c543f1163df44083a4d065f3c0d65, type: 2}
+  wrong: {fileID: 2100000, guid: e11b7bfc77c932d4c9dfd0d2f1608f79, type: 2}
+  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
+  planetBall: {fileID: 756014409}
+  planetCone: {fileID: 1277992223}
 --- !u!1 &2137782242
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,7 +4728,7 @@ GameObject:
   - component: {fileID: 2137782249}
   m_Layer: 0
   m_Name: Venus-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4110,7 +4746,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 7
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2137782244
 MonoBehaviour:
@@ -4340,9 +4976,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 2137782246}
   planetTransform: {fileID: 2137782243}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 446771394}
   planetToActivate: {fileID: 1670633}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1 &2147429110
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,7 +4998,7 @@ GameObject:
   - component: {fileID: 2147429117}
   m_Layer: 0
   m_Name: Uranus-ball
-  m_TagString: Untagged
+  m_TagString: PlanetBalls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4378,7 +5016,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1166245879}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2147429112
 MonoBehaviour:
@@ -4608,9 +5246,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   planetRigibody: {fileID: 2147429114}
   planetTransform: {fileID: 2147429111}
-  planetPosition: {fileID: 0}
+  planetPosition: {fileID: 1124081483}
   planetToActivate: {fileID: 969693836}
   ballSpawn: {fileID: 459851339}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!1001 &369303030632728985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4620,7 +5260,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 192175233624703721, guid: 34ae2c2272c2d274787077468b92b52f, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 192175233624703721, guid: 34ae2c2272c2d274787077468b92b52f, type: 3}
       propertyPath: m_LocalScale.x

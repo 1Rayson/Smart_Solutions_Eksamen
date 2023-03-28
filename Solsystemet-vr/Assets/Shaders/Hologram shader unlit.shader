@@ -55,7 +55,7 @@ Shader "Unlit/Hologram shader unlit"
             {
                 // sample the texture
                 float2 uv = i.uv;
-                uv.y += _Time.y * 0.07;
+                uv.y += _Time.y * 0.1;
 
                 fixed4 col = tex2D(_MainTex, uv);
 

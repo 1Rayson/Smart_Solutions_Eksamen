@@ -16,7 +16,7 @@ public class SnapPlanetToPosition : MonoBehaviour
     public AudioSource wrongSroundEffect;
 
 
-    private bool inCorrectPlace = false;
+    public bool inCorrectPlace = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -52,7 +52,7 @@ public class SnapPlanetToPosition : MonoBehaviour
     void OnTriggerEnter(Collider other){
         if(other.tag == "PlanetSocket"){
             if(other.gameObject == planetPosition){
-                //inCorrectPlace = true;
+                inCorrectPlace = true;
                 planetToActivate.SetActive(true);
                 correctSoundEffect.Play();     
             } else

@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class FloatingText : MonoBehaviour
 {
-    transform mainCam;
-    Transform unit;
+    Transform mainCam;
+    Transform planetBall;
     Transform worldSpaceCanvas;
 
     public Vector3 offset;
-
     // Start is called before the first frame update
     void Start()
     {
         mainCam = Camera.main.transform;
-        unit = transform.parent;
+        planetBall = transform.parent;
         worldSpaceCanvas = GameObject.FindObjectOfType<Canvas>().transform;
 
         transform.SetParent(worldSpaceCanvas);
@@ -23,7 +22,7 @@ public class FloatingText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position); //always looks at the camera
-        transform.position = unit.position + offset;
+        transform.rotation = Quaternion.LookRotation(transform.position - mainCam.transform.position);
+        transform.position = planetBall.position + offset;
     }
 }

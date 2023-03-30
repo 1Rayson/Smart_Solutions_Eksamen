@@ -16,7 +16,7 @@ public class SnapPlanetToPosition : MonoBehaviour
     public AudioSource wrongSroundEffect;
 
 
-    private bool inCorrectPlace = false;
+    public bool inCorrectPlace = false;
     // Start is called before the first frame update
     void Start()
     {

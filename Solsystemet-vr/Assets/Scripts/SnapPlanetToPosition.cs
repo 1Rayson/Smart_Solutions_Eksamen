@@ -52,7 +52,7 @@ public class SnapPlanetToPosition : MonoBehaviour
     void OnTriggerEnter(Collider other){
         if(other.tag == "PlanetSocket"){
             if(other.gameObject == planetPosition){
-                //inCorrectPlace = true;
+                inCorrectPlace = true;
                 planetToActivate.SetActive(true);
                 correctSoundEffect.Play();     
             } else

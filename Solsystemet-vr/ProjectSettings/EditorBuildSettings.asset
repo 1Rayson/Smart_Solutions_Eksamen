@@ -4,7 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Level 1 - Planet order.unity
+    guid: d50db9f183f08f64880816ee5821606c
+  - enabled: 1
+    path: Assets/Scenes/Level 2 - Planet size.unity
+    guid: 6fc55abdfb9879d46813a90204ac06d6
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: e45bf8f9fe5b6b5428b67acff1592a0a, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: e4c52212f99557746a0bbe398d5fdaff, type: 2}

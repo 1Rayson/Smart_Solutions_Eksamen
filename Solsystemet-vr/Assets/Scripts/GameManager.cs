@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public GameObject PlanetBalls;
     private int amountCorrect = 0;
+    public GameObject winPopUp;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +29,7 @@ public class GameManager : MonoBehaviour
 
             if(amountCorrect == 8)
             {
+                winPopUp.gameObject.SetActive(true);
                 Debug.Log("You won, ehhe");
             } else
             {

@@ -6803,7 +6803,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Du har placeret alle planeterne korrekt!
+  m_text: Du har angivet korrekt afstand mellem planeterne!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
@@ -8125,7 +8125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "G\xE5 til n\xE6ste level"
+  m_text: Udforsk rummet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}

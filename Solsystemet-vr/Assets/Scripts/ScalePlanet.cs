@@ -5,11 +5,20 @@ using UnityEngine;
 public class ScalePlanet : MonoBehaviour
 {
     public GameObject scaleReference;
-    Vector3 priorRefScale = new Vector3(0, 0, 0);
+    public GameObject planetToLeft;
+    public GameObject planetToLeftModel;
+    public GameObject planetModel;
+    public int planetMargin = 40;
+
+    private Vector3 currentPosition;
+    private Vector3 priorRefScale = new Vector3(0, 0, 0);
     // Start is called before the first frame update
     void Start()
     {
+        currentPosition = GetComponent<Transform>().position;
         priorRefScale = scaleReference.transform.localScale;
+
+        // MovePlanet();
     }
 
     // Update is called once per frame
@@ -26,8 +35,23 @@ public class ScalePlanet : MonoBehaviour
             Vector3 newScale = new Vector3(newScaleX, newScaleY, newScaleZ);
 
             transform.localScale = newScale;
-        }
 
+            // planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
+        }
         priorRefScale = currentRefScale;
     }
+
+    /* void MovePlanet(){
+        Vector3 newPosition = currentPosition;
+
+        float leftPlanetRadius = (planetToLeftModel.transform.localScale.x * planetToLeft.transform.localScale.x);
+        float planetRadius = (planetModel.transform.localScale.x * transform.localScale.x);
+        
+        float planetDistance = leftPlanetRadius + planetMargin + planetRadius;
+        
+        newPosition.x = currentPosition.x + planetDistance;
+        transform.position = newPosition;
+
+        currentPosition = newPosition;
+    } */
 }

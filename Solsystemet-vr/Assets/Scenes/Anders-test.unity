@@ -226,8 +226,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Planeterne er faldet ud af deres baner, kan du s\xE6tte dem rigtigt p\xE5
-    plads?"
+  m_text: "Planeterne er forsvundet fra deres pladser, kan du s\xE6tte dem rigtigt
+    p\xE5 plads?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}

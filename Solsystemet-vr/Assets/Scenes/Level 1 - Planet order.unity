@@ -6419,7 +6419,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -17.5}
+  m_AnchoredPosition: {x: 0, y: -24.9}
   m_SizeDelta: {x: 90, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &486715723
@@ -16625,8 +16625,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Uranus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17625,8 +17625,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jorden
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18036,8 +18036,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mars
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18205,8 +18205,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Saturn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18467,7 +18467,7 @@ MonoBehaviour:
   m_text: "G\xE5 til n\xE6ste level"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19088,8 +19088,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Venus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19915,8 +19915,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Merkur
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20138,8 +20138,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jupiter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20321,7 +20321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -9.1}
+  m_AnchoredPosition: {x: 0, y: -12.5}
   m_SizeDelta: {x: 237.05, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634034467
@@ -20347,7 +20347,7 @@ MonoBehaviour:
   m_text: Du har placeret alle planeterne korrekt!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20623,8 +20623,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Neptun
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

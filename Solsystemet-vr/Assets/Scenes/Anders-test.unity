@@ -230,7 +230,7 @@ MonoBehaviour:
     p\xE5 plads?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -780,7 +780,7 @@ MonoBehaviour:
     for at alt bliver som f\xF8r?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14137,7 +14137,7 @@ MonoBehaviour:
   m_text: Solsystemet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14993,8 +14993,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Solsystemet
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -15161,7 +15161,7 @@ MonoBehaviour:
   m_text: Solsystemet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -16951,7 +16951,7 @@ MonoBehaviour:
     afstandene er rigtig igen?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

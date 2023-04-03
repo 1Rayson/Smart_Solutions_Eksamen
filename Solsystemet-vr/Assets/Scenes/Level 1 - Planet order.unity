@@ -724,7 +724,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &223888415
 Transform:
   m_ObjectHideFlags: 0
@@ -16413,8 +16413,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Uranus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17413,8 +17413,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jorden
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17824,8 +17824,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Mars
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17993,8 +17993,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Saturn
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18255,7 +18255,7 @@ MonoBehaviour:
   m_text: "G\xE5 til n\xE6ste level"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18771,8 +18771,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Venus
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19598,8 +19598,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Merkur
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -19821,8 +19821,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Jupiter
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20030,7 +20030,7 @@ MonoBehaviour:
   m_text: Du har placeret alle planeterne korrekt!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20306,8 +20306,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Neptun
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 1380306436426212144, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 0}
+  m_sharedMaterial: {fileID: 0}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

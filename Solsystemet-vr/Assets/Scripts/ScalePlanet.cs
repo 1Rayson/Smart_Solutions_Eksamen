@@ -19,8 +19,6 @@ public class ScalePlanet : MonoBehaviour
     {
         currentPosition = GetComponent<Transform>().position;
         priorRefScale = scaleReference.transform.localScale;
-
-        // MovePlanet();
     }
 
     void Update()
@@ -33,14 +31,22 @@ public class ScalePlanet : MonoBehaviour
             {
                 Vector3 currentScale = transform.localScale;
 
+                /* 
+                    Da planeterne skalere det samme på x, y og z, så behøver jeg kun at finde en værdi
+                    og så gange det på en (1, 1, 1) vektor. 
+                */
                 float newScaleX = (currentRefScale.x / priorRefScale.x) * currentScale.x;
                 float newScaleY = (currentRefScale.y / priorRefScale.y) * currentScale.y;
                 float newScaleZ = (currentRefScale.z / priorRefScale.z) * currentScale.z;
+
+                /*
+                    Denne linje kan jeg bruge til begrænse skalering, også til planetboldene
+                    newScaleX = Mathf.Clamp(newScaleX, 0.5f, 2f);
+                */
+
                 Vector3 newScale = new Vector3(newScaleX, newScaleY, newScaleZ);
 
                 transform.localScale = newScale;
-
-                // planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
 
                 if(
                     (newScaleX > 1 - tolerance && newScaleX < 1 + tolerance) &&
@@ -56,9 +62,7 @@ public class ScalePlanet : MonoBehaviour
             priorRefScale = currentRefScale;
 
         }
-    }
 
-    /* void MovePlanet(){
         Vector3 newPosition = currentPosition;
 
         float leftPlanetRadius = (planetToLeftModel.transform.localScale.x * planetToLeft.transform.localScale.x);
@@ -70,5 +74,5 @@ public class ScalePlanet : MonoBehaviour
         transform.position = newPosition;
 
         currentPosition = newPosition;
-    } */
+    }
 }

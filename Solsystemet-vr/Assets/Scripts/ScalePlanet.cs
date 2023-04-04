@@ -12,16 +12,15 @@ public class ScalePlanet : MonoBehaviour
 
     private Vector3 currentPosition;
     private Vector3 priorRefScale = new Vector3(0, 0, 0);
-    // Start is called before the first frame update
+    
     void Start()
     {
         currentPosition = GetComponent<Transform>().position;
         priorRefScale = scaleReference.transform.localScale;
 
-        // MovePlanet();
+        MovePlanet();
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 currentRefScale = scaleReference.transform.localScale;
@@ -36,22 +35,22 @@ public class ScalePlanet : MonoBehaviour
 
             transform.localScale = newScale;
 
-            // planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
+            planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
         }
         priorRefScale = currentRefScale;
     }
 
-    /* void MovePlanet(){
+    void MovePlanet(){
         Vector3 newPosition = currentPosition;
 
         float leftPlanetRadius = (planetToLeftModel.transform.localScale.x * planetToLeft.transform.localScale.x);
         float planetRadius = (planetModel.transform.localScale.x * transform.localScale.x);
         
-        float planetDistance = leftPlanetRadius + planetMargin + planetRadius;
+        float planetDistance = (leftPlanetRadius + planetMargin + planetRadius) * -1;
         
-        newPosition.x = currentPosition.x + planetDistance;
+        newPosition.x = planetToLeft.transform.position.x + planetDistance;
         transform.position = newPosition;
 
         currentPosition = newPosition;
-    } */
+    }
 }

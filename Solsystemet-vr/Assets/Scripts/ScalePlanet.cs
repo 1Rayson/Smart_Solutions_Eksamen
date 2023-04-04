@@ -12,35 +12,53 @@ public class ScalePlanet : MonoBehaviour
 
     private Vector3 currentPosition;
     private Vector3 priorRefScale = new Vector3(0, 0, 0);
+    private float tolerance = 0.3f;
+    private bool correctSize = false;
     
     void Start()
     {
         currentPosition = GetComponent<Transform>().position;
         priorRefScale = scaleReference.transform.localScale;
 
-        MovePlanet();
+        // MovePlanet();
     }
 
     void Update()
     {
-        Vector3 currentRefScale = scaleReference.transform.localScale;
+        if(!correctSize)
+        {
+            Vector3 currentRefScale = scaleReference.transform.localScale;
 
-        if(currentRefScale != priorRefScale){
-            Vector3 currentScale = transform.localScale;
+            if(currentRefScale != priorRefScale)
+            {
+                Vector3 currentScale = transform.localScale;
 
-            float newScaleX = (currentRefScale.x / priorRefScale.x) * currentScale.x;
-            float newScaleY = (currentRefScale.y / priorRefScale.y) * currentScale.y;
-            float newScaleZ = (currentRefScale.z / priorRefScale.z) * currentScale.z;
-            Vector3 newScale = new Vector3(newScaleX, newScaleY, newScaleZ);
+                float newScaleX = (currentRefScale.x / priorRefScale.x) * currentScale.x;
+                float newScaleY = (currentRefScale.y / priorRefScale.y) * currentScale.y;
+                float newScaleZ = (currentRefScale.z / priorRefScale.z) * currentScale.z;
+                Vector3 newScale = new Vector3(newScaleX, newScaleY, newScaleZ);
 
-            transform.localScale = newScale;
+                transform.localScale = newScale;
 
-            planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
+                // planetToLeft.GetComponent<ScalePlanet>().MovePlanet();
+
+                if(
+                    (newScaleX > 1 - tolerance && newScaleX < 1 + tolerance) &&
+                    (newScaleY > 1 - tolerance && newScaleY < 1 + tolerance) &&
+                    (newScaleZ > 1 - tolerance && newScaleZ < 1 + tolerance)
+                )
+                {
+                    correctSize = true;
+                    transform.localScale = new Vector3(1, 1, 1);
+                }
+            }
+
+            priorRefScale = currentRefScale;
+
         }
-        priorRefScale = currentRefScale;
     }
 
-    void MovePlanet(){
+    /* void MovePlanet(){
         Vector3 newPosition = currentPosition;
 
         float leftPlanetRadius = (planetToLeftModel.transform.localScale.x * planetToLeft.transform.localScale.x);
@@ -52,5 +70,5 @@ public class ScalePlanet : MonoBehaviour
         transform.position = newPosition;
 
         currentPosition = newPosition;
-    }
+    } */
 }

@@ -800,7 +800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &223888415
 Transform:
   m_ObjectHideFlags: 0
@@ -1197,7 +1197,7 @@ MonoBehaviour:
     p\xE5 plads?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21300,7 +21300,7 @@ MonoBehaviour:
   m_text: Solsystemet
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: 238708720913681697, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

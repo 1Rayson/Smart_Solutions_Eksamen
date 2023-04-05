@@ -800,7 +800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &223888415
 Transform:
   m_ObjectHideFlags: 0
@@ -1196,8 +1196,8 @@ MonoBehaviour:
   m_text: "Planeterne er forsvundet fra deres pladser, kan du s\xE6tte dem rigtigt
     p\xE5 plads?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
+  m_sharedMaterial: {fileID: 2918126453569725631, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -17456,8 +17456,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "G\xE5 til n\xE6ste level!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
+  m_sharedMaterial: {fileID: 2918126453569725631, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20652,8 +20652,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Du har placeret alle planeterne korrekt!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
+  m_sharedMaterial: {fileID: 2918126453569725631, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -21605,8 +21605,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Solsystemet
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
-  m_sharedMaterial: {fileID: -1125231304172505565, guid: b3f1a3efd6c800942b6716617f175005, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
+  m_sharedMaterial: {fileID: 2918126453569725631, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

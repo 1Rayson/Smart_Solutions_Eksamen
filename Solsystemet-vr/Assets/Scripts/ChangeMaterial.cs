@@ -16,7 +16,6 @@ public class ChangeMaterial : MonoBehaviour
     public GameObject planetBall;
     public GameObject planetCone;
 
-
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "PlanetBalls")

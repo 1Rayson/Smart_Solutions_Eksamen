@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit.Transformers;
 
 public class ScalePlanet : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class ScalePlanet : MonoBehaviour
     public GameObject planetToLeftModel;
     public GameObject planetModel;
     public int planetMargin = 40;
+    public Material coneCorrect;
+    public GameObject cone;
 
     private Vector3 currentPosition;
     private Vector3 priorRefScale = new Vector3(0, 0, 0);
-    private float tolerance = 0.3f;
+    private float tolerance = 0.1f;
     private bool correctSize = false;
     
     void Start()
@@ -56,6 +59,9 @@ public class ScalePlanet : MonoBehaviour
                 {
                     correctSize = true;
                     transform.localScale = new Vector3(1, 1, 1);
+                    cone.GetComponent<Renderer>().material = coneCorrect;
+                    scaleReference.GetComponent<XRBaseGrabTransformer>().enabled = false;
+                    
                 }
             }
 

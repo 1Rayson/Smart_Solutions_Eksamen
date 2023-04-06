@@ -173,6 +173,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 690396251}
   planetModel: {fileID: 96034761}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 1143512541}
 --- !u!1 &84242801
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,8 +273,8 @@ RectTransform:
   - {fileID: 784262144}
   - {fileID: 1666148334}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 98.7, z: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 322, y: 181}
@@ -296,7 +298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8243481825124240662, guid: 76559214026fdc6489dadca7b955f9c2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8243481825124240662, guid: 76559214026fdc6489dadca7b955f9c2, type: 3}
       propertyPath: m_LocalScale.x
@@ -367,6 +369,7 @@ GameObject:
   - component: {fileID: 226226150}
   - component: {fileID: 226226149}
   - component: {fileID: 226226154}
+  - component: {fileID: 226226155}
   m_Layer: 0
   m_Name: Neptun-ball
   m_TagString: Untagged
@@ -382,7 +385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 226226147}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94652677, y: 0.578, z: 0.307}
+  m_LocalPosition: {x: -1.184, y: 0.586, z: 0.529}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -618,13 +621,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &226226155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226226147}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &232131212
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,6 +674,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 737612227}
   planetModel: {fileID: 314967592}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 270233871}
 --- !u!4 &232131214
 Transform:
   m_ObjectHideFlags: 0
@@ -700,15 +717,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.65
+      value: 2.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 0.51
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.35
+      value: 1.37
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -748,7 +765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -1193,6 +1210,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 653346885}
   planetModel: {fileID: 1551782879}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 2039020244}
 --- !u!1001 &510423718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1218,15 +1237,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.38
+      value: 3.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.42
+      value: 0.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.05
+      value: 3.04
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1266,7 +1285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -1368,6 +1387,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 919132147508137801}
   planetModel: {fileID: 1745852639}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 360196247}
 --- !u!1 &690396251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8bc9a31b74273b84bbcec2e95653cdb3, type: 3}
@@ -1520,6 +1541,7 @@ GameObject:
   - component: {fileID: 756014412}
   - component: {fileID: 756014411}
   - component: {fileID: 756014416}
+  - component: {fileID: 756014417}
   m_Layer: 0
   m_Name: Jupiter-ball
   m_TagString: Untagged
@@ -1535,7 +1557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 756014409}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: 0.292, y: 0.5799942, z: -0.25498462}
+  m_LocalPosition: {x: 0.46626383, y: 0.5805893, z: -0.25530052}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1771,13 +1793,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &756014417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756014409}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &757712413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,6 +1827,7 @@ GameObject:
   - component: {fileID: 757712416}
   - component: {fileID: 757712415}
   - component: {fileID: 757712420}
+  - component: {fileID: 757712421}
   m_Layer: 0
   m_Name: Mars-ball
   m_TagString: Untagged
@@ -1808,7 +1843,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757712413}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: 0.7403533, y: 0.5774002, z: -0.2490151}
+  m_LocalPosition: {x: 1.0394976, y: 0.58540344, z: -0.21719289}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2043,13 +2078,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &757712421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757712413}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &769068227
 GameObject:
   m_ObjectHideFlags: 0
@@ -2329,6 +2376,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 96034761}
   planetModel: {fileID: 737612227}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 2051573274}
 --- !u!1 &856086990
 GameObject:
   m_ObjectHideFlags: 0
@@ -2420,6 +2469,7 @@ GameObject:
   - component: {fileID: 861864485}
   - component: {fileID: 861864484}
   - component: {fileID: 861864489}
+  - component: {fileID: 861864490}
   m_Layer: 0
   m_Name: Saturn-ball
   m_TagString: Untagged
@@ -2435,7 +2485,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 861864482}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: -0.145, y: 0.5719968, z: -0.14398469}
+  m_LocalPosition: {x: -0.18741687, y: 0.5889951, z: -0.14308132}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2672,13 +2722,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &861864490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 861864482}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &952137712
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 952137713}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &952137713
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 952137712}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1774970751}
+  - {fileID: 2082195274}
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &969693836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2731,6 +2826,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 1551782879}
   planetModel: {fileID: 919132147508137801}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 375360714}
 --- !u!1 &974265199
 GameObject:
   m_ObjectHideFlags: 0
@@ -2921,6 +3018,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 314967592}
   planetModel: {fileID: 653346885}
   planetMargin: 40
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 1156830614}
 --- !u!1 &1113681493
 GameObject:
   m_ObjectHideFlags: 0
@@ -3020,26 +3119,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 510423718}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1143512542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143512541}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 2137782242}
-  planetCone: {fileID: 1143512541}
 --- !u!1 &1156830614 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -3070,15 +3149,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.57
+      value: -3.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 0.46
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.31
+      value: 2.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3118,7 +3197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -3127,26 +3206,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 1161361409}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1161361411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360196247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 226226147}
-  planetCone: {fileID: 360196247}
 --- !u!1 &1166245878
 GameObject:
   m_ObjectHideFlags: 0
@@ -3184,7 +3243,7 @@ Transform:
   - {fileID: 2147429111}
   - {fileID: 226226148}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1176304658
 GameObject:
@@ -3220,7 +3279,7 @@ Transform:
   - {fileID: 698785633}
   - {fileID: 256502502}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 15, y: 0, z: 0}
 --- !u!1 &1281209015
 GameObject:
@@ -3259,7 +3318,7 @@ Transform:
   - {fileID: 1473009414}
   - {fileID: 659107096}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: -3, z: 0}
 --- !u!1 &1318802643
 GameObject:
@@ -3308,6 +3367,7 @@ GameObject:
   - component: {fileID: 1406748324}
   - component: {fileID: 1406748323}
   - component: {fileID: 1406748328}
+  - component: {fileID: 1406748329}
   m_Layer: 0
   m_Name: Mercury-ball
   m_TagString: Untagged
@@ -3323,7 +3383,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406748321}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: 2.0241857, y: 0.58239746, z: 0.2436012}
+  m_LocalPosition: {x: 2.526, y: 0.581, z: 0.786}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3558,13 +3618,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &1406748329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406748321}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1424502959
 GameObject:
   m_ObjectHideFlags: 0
@@ -3935,15 +4007,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.45
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.46
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.08
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3983,7 +4055,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -3992,26 +4064,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 1548337402}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1548337404
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 270233871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 757712413}
-  planetCone: {fileID: 270233871}
 --- !u!1 &1551782879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 77ed249ec40fa6e4eaabbb918ae27575, type: 3}
@@ -4042,15 +4094,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.45
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.72
+      value: 4.79
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4090,7 +4142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -4099,26 +4151,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 1577187229}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1577187231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 514703275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 1406748321}
-  planetCone: {fileID: 514703275}
 --- !u!1001 &1588839389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4144,15 +4176,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.65
+      value: 0.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.47
+      value: 0.473
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.07
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4192,7 +4224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -4201,26 +4233,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 1588839389}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1588839391
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156830614}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 756014409}
-  planetCone: {fileID: 1156830614}
 --- !u!1 &1621389062
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,7 +4271,7 @@ Transform:
   - {fileID: 969693837}
   - {fileID: 665415780}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1626344731
 GameObject:
@@ -4571,6 +4583,7 @@ GameObject:
   - component: {fileID: 1711969499}
   - component: {fileID: 1711969498}
   - component: {fileID: 1711969504}
+  - component: {fileID: 1711969505}
   m_Layer: 0
   m_Name: Earth-ball
   m_TagString: Untagged
@@ -4586,7 +4599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711969496}
   m_LocalRotation: {x: -0, y: -0.000000033527613, z: -0, w: 1}
-  m_LocalPosition: {x: 1.1960413, y: 0.5730057, z: -0.17491937}
+  m_LocalPosition: {x: 1.596242, y: 0.5890045, z: -0.034066677}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4821,13 +4834,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &1711969505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711969496}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1739798046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4915,6 +4940,134 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a922ded9ec68da4796caeb24ce62929, type: 3}
   m_PrefabInstance: {fileID: 1739798046}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1774970750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1774970751}
+  - component: {fileID: 1774970752}
+  m_Layer: 0
+  m_Name: Background_music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1774970751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774970750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -87.83036, y: -73.68026, z: -22.314718}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 952137713}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1774970752
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774970750}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 545ef517d7bcbda40ab8ed5141110b43, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.5
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1904501638
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4940,15 +5093,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.04
+      value: -2.96
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.43
+      value: 0.425
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.67
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4988,7 +5141,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -4997,26 +5150,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 1904501638}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1904501640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 375360714}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 2147429110}
-  planetCone: {fileID: 375360714}
 --- !u!1 &1910901764
 GameObject:
   m_ObjectHideFlags: 0
@@ -5067,6 +5200,8 @@ MonoBehaviour:
   planetToLeftModel: {fileID: 3862426243525204190}
   planetModel: {fileID: 690396251}
   planetMargin: 250
+  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
+  cone: {fileID: 514703275}
 --- !u!1 &1944674655
 GameObject:
   m_ObjectHideFlags: 0
@@ -5141,26 +5276,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 235077798}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2051573275
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2051573274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 1711969496}
-  planetCone: {fileID: 2051573274}
 --- !u!1001 &2065529948
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5186,15 +5301,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.18
+      value: -1.39
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.44
+      value: 0.525
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.23
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5234,7 +5349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
       propertyPath: m_TagString
-      value: PlanetBalls
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -5243,26 +5358,134 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
   m_PrefabInstance: {fileID: 2065529948}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2065529950
-MonoBehaviour:
+--- !u!1 &2082195273
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039020244}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2082195274}
+  - component: {fileID: 2082195275}
+  m_Layer: 0
+  m_Name: Correct_sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2082195274
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082195273}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -87.88642, y: -73.5837, z: -21.903187}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 952137713}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &2082195275
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082195273}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7869a2ab60886ca48a361a55c5e9c39c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  neutral: {fileID: 0}
-  correct: {fileID: 0}
-  wrong: {fileID: 0}
-  coneNeutral: {fileID: 2100000, guid: 1768536ab9d81614eae291d95f2f4c52, type: 2}
-  coneCorrect: {fileID: 2100000, guid: 7c31b8aaabbded74b8f5a7863a8a967f, type: 2}
-  coneWrong: {fileID: 2100000, guid: 439dfd6812527b34d8f965adc7520adf, type: 2}
-  planetBall: {fileID: 861864482}
-  planetCone: {fileID: 2039020244}
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: cf66963e593fe17448ac0f8b9b202381, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &2137782242
 GameObject:
   m_ObjectHideFlags: 0
@@ -5278,6 +5501,7 @@ GameObject:
   - component: {fileID: 2137782245}
   - component: {fileID: 2137782244}
   - component: {fileID: 2137782249}
+  - component: {fileID: 2137782250}
   m_Layer: 0
   m_Name: Venus-ball
   m_TagString: Untagged
@@ -5293,7 +5517,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137782242}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: 1.633, y: 0.56899685, z: 0.012015313}
+  m_LocalPosition: {x: 2.123, y: 0.58, z: 0.335}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5528,13 +5752,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &2137782250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137782242}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2147429110
 GameObject:
   m_ObjectHideFlags: 0
@@ -5550,6 +5786,7 @@ GameObject:
   - component: {fileID: 2147429113}
   - component: {fileID: 2147429112}
   - component: {fileID: 2147429117}
+  - component: {fileID: 2147429118}
   m_Layer: 0
   m_Name: Uranus-ball
   m_TagString: Untagged
@@ -5565,7 +5802,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147429110}
   m_LocalRotation: {x: -0, y: -0.000000011175871, z: -0, w: 1}
-  m_LocalPosition: {x: -0.5784199, y: 0.57579803, z: 0.046103954}
+  m_LocalPosition: {x: -0.746, y: 0.575, z: 0.158}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -5802,13 +6039,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PermittedDisplacementAxes: 7
   m_ConstrainedAxisDisplacementMode: 1
-  m_TwoHandedRotationMode: 1
+  m_TwoHandedRotationMode: 2
   m_AllowTwoHandedScaling: 1
   m_ThresholdMoveRatioForScale: 0.1
   m_ClampScaling: 1
-  m_MinimumScaleRatio: 0.25
-  m_MaximumScaleRatio: 2
-  m_ScaleMultiplier: 0.15
+  m_MinimumScaleRatio: 0.14
+  m_MaximumScaleRatio: 3.3
+  m_ScaleMultiplier: 0.1
+--- !u!114 &2147429118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147429110}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0380e3a7a03b5fd48a7d4a3238818569, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &369303030632728985
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5818,7 +6067,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 192175233624703721, guid: 34ae2c2272c2d274787077468b92b52f, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 192175233624703721, guid: 34ae2c2272c2d274787077468b92b52f, type: 3}
       propertyPath: m_LocalScale.x

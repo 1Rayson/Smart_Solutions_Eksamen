@@ -12,6 +12,8 @@ public class ScalePlanet : MonoBehaviour
     public int planetMargin = 40;
     public Material coneCorrect;
     public GameObject cone;
+    public AudioSource correctSound;
+    public GameManager gameManager;
 
     private Vector3 currentPosition;
     private Vector3 priorRefScale = new Vector3(0, 0, 0);
@@ -57,11 +59,11 @@ public class ScalePlanet : MonoBehaviour
                     (newScaleZ > 1 - tolerance && newScaleZ < 1 + tolerance)
                 )
                 {
+                    gameManager.AddCorrect();
                     correctSize = true;
                     transform.localScale = new Vector3(1, 1, 1);
                     cone.GetComponent<Renderer>().material = coneCorrect;
                     scaleReference.GetComponent<XRBaseGrabTransformer>().enabled = false;
-                    
                 }
             }
 

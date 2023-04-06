@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.Interaction.Toolkit.Transformers;
 
 public class SnapPlanetToPosition : MonoBehaviour
 {
@@ -10,13 +11,10 @@ public class SnapPlanetToPosition : MonoBehaviour
     public GameObject planetPosition;
     public GameObject planetToActivate;
     public GameObject ballSpawn;
+    public GameManager gameManager;
+    
+    private bool haveBeenRight = false;
 
-    //AUDIO
-    public AudioSource correctSoundEffect;
-    public AudioSource wrongSroundEffect;
-
-
-    public bool inCorrectPlace = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,16 +24,7 @@ public class SnapPlanetToPosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if(inCorrectPlace)
-        {
-            planetToActivate.SetActive(true);
-            correctSoundEffect.Play();
-            Debug.Log("hehe");
-        }
-        else 
-        {
-            planetToActivate.SetActive(false);
-        }*/
+
     }
 
     void OnTriggerStay(Collider other)
@@ -52,12 +41,14 @@ public class SnapPlanetToPosition : MonoBehaviour
     void OnTriggerEnter(Collider other){
         if(other.tag == "PlanetSocket"){
             if(other.gameObject == planetPosition){
-                inCorrectPlace = true;
-                planetToActivate.SetActive(true);
-                correctSoundEffect.Play();     
+                if(!haveBeenRight){
+                    gameManager.AddCorrect();
+                    haveBeenRight = true;
+                }
+                planetToActivate.SetActive(true);    
             } else
             {
-                wrongSroundEffect.Play();
+                gameManager.wrong();
             }
         }
 
@@ -70,7 +61,6 @@ public class SnapPlanetToPosition : MonoBehaviour
     
     void OnTriggerExit(Collider other){
         if(other.tag == "PlanetSocket"){
-            inCorrectPlace = false;
             planetToActivate.SetActive(false);
         }
     }

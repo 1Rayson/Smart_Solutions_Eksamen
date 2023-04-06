@@ -1190,9 +1190,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616627495935456}
   planetToActivate: {fileID: 916637496}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &256502501
 GameObject:
   m_ObjectHideFlags: 0
@@ -16849,9 +16847,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616625702927666}
   planetToActivate: {fileID: 1110865681}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &757712413
 GameObject:
   m_ObjectHideFlags: 0
@@ -17121,9 +17117,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616626249683253}
   planetToActivate: {fileID: 1588775438}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &771233973
 GameObject:
   m_ObjectHideFlags: 0
@@ -17709,9 +17703,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616627207641749}
   planetToActivate: {fileID: 7714477938480607402}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &864249103
 GameObject:
   m_ObjectHideFlags: 0
@@ -19037,8 +19029,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264928820}
-  m_LocalRotation: {x: -0, y: 0.75870305, z: -0, w: 0.6514366}
-  m_LocalPosition: {x: 0, y: 0, z: -20.097}
+  m_LocalRotation: {x: -0, y: 0.7751596, z: -0, w: 0.63176554}
+  m_LocalPosition: {x: 0, y: 0, z: -20.896}
   m_LocalScale: {x: 0.00233, y: 0.007999999, z: 0.0009999999}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19049,10 +19041,10 @@ RectTransform:
   - {fileID: 1587243194}
   m_Father: {fileID: 0}
   m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 98.7, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 101.639, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -85.1904, y: -72.923}
+  m_AnchoredPosition: {x: -85.048, y: -72.923}
   m_SizeDelta: {x: 975, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1277131905
@@ -19158,7 +19150,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -87.587, y: -72.49695}
+  m_AnchoredPosition: {x: -87.587, y: -72.82}
   m_SizeDelta: {x: 975, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1313137454
@@ -19905,9 +19897,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616627303877607}
   planetToActivate: {fileID: 1910901764}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &1415418155
 GameObject:
   m_ObjectHideFlags: 0
@@ -19937,8 +19927,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1681e7fa0041ade4faf4baac5db4f5d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlanetBalls: {fileID: 1166245878}
   winPopUp: {fileID: 1277131905}
+  correctSoundEffect: {fileID: 1921531824}
+  wrongSroundEffect: {fileID: 1799931622}
 --- !u!4 &1415418157
 Transform:
   m_ObjectHideFlags: 0
@@ -21476,9 +21467,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616625651361932}
   planetToActivate: {fileID: 846496723}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &1715259357
 GameObject:
   m_ObjectHideFlags: 0
@@ -27395,9 +27384,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616625778865907}
   planetToActivate: {fileID: 1670633}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1 &2137925007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 959e4066e4e12884fb906082160c6a56, type: 3}
@@ -27679,9 +27666,7 @@ MonoBehaviour:
   planetPosition: {fileID: 7930616626777769008}
   planetToActivate: {fileID: 969693836}
   ballSpawn: {fileID: 459851339}
-  correctSoundEffect: {fileID: 1921531824}
-  wrongSroundEffect: {fileID: 1799931622}
-  inCorrectPlace: 0
+  gameManager: {fileID: 1415418156}
 --- !u!1001 &369303030632728985
 PrefabInstance:
   m_ObjectHideFlags: 0

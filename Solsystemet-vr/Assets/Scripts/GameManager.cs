@@ -6,9 +6,14 @@ using UnityEngine.InputSystem;
 public class GameManager : MonoBehaviour
 
 {
-    public GameObject PlanetBalls;
+    // public GameObject PlanetBalls;
     private int amountCorrect = 0;
     public GameObject winPopUp;
+
+    //AUDIO
+    public AudioSource correctSoundEffect;
+    public AudioSource wrongSroundEffect;
+
 
     // Start is called before the first frame update
     void Start()
@@ -19,21 +24,20 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-            for (int i = 0; i < PlanetBalls.transform.childCount; i++)
-            {
-                if (PlanetBalls.transform.GetChild(i).GetComponent<SnapPlanetToPosition>().inCorrectPlace)
-                {
-                    amountCorrect++;
-                }
-            }
+        
+    }
 
-            if(amountCorrect == 8)
-            {
-                winPopUp.gameObject.SetActive(true);
-                Debug.Log("You won, ehhe");
-            } else
-            {
-                amountCorrect = 0;
-            }
-        } 
+    public void AddCorrect(){
+        amountCorrect++;
+        correctSoundEffect.Play();
+
+        if(amountCorrect == 8)
+        {
+            winPopUp.gameObject.SetActive(true);
+        }
+    }
+
+    public void wrong(){
+        wrongSroundEffect.Play();
+    }
 }

@@ -19844,7 +19844,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "For at tage fat \xE9n planet, skal \ndu bruge knappen p\xE5 siden"
+  m_text: "For at tage fat \xE9n planet, skal \ndu bruge knappen p\xE5 siden."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
   m_sharedMaterial: {fileID: 2918126453569725631, guid: fac19f42e66b43c418cf0eaa36a0e4b3, type: 2}
@@ -27157,6 +27157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5ba5e25d209d241a2cbb4d74b5255e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1454071049}
 --- !u!114 &2108801822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27203,8 +27204,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2108801821}
         m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: MoveToScene
-        m_Mode: 3
+        m_MethodName: HideUI
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -27304,6 +27305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d5ba5e25d209d241a2cbb4d74b5255e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvas: {fileID: 1495106438}
 --- !u!114 &2115349887
 MonoBehaviour:
   m_ObjectHideFlags: 0

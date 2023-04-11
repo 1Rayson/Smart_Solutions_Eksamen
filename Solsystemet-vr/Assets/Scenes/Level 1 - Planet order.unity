@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004072781, g: 0.019338453, b: 0.03070904, a: 1}
+  m_IndirectSpecularColor: {r: 0.004074199, g: 0.019367827, b: 0.030757796, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17357,7 +17357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a44bedcc76264c341853e7c5b84d535c, type: 2}
+  - {fileID: 2100000, guid: eb37f73a98e383c46ac156404d014977, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17868,6 +17868,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6791080057321353005, guid: 0a38dca9cd1484ef0a731f5e6880910f, type: 3}
   m_PrefabInstance: {fileID: 2064468286}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &916637498
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916637496}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4711208715938537054, guid: 4a922ded9ec68da4796caeb24ce62929, type: 3}
 --- !u!1 &969693836
 GameObject:
   m_ObjectHideFlags: 0
@@ -27425,6 +27439,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1621389063}
     m_Modifications:
+    - target: {fileID: 5653688276607767618, guid: 0a38dca9cd1484ef0a731f5e6880910f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 169088215cf0ec044865643fe15fbd70, type: 2}
     - target: {fileID: 6157850022501201303, guid: 0a38dca9cd1484ef0a731f5e6880910f, type: 3}
       propertyPath: m_Name
       value: Neptune
@@ -27477,6 +27495,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7606888465496531080, guid: 0a38dca9cd1484ef0a731f5e6880910f, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 4711208715938537054, guid: 4a922ded9ec68da4796caeb24ce62929, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a38dca9cd1484ef0a731f5e6880910f, type: 3}
 --- !u!1 &2066056310
@@ -28103,7 +28125,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2fac5811424b41e43b90c47dba5a3ad9, type: 2}
+  - {fileID: 2100000, guid: 7fa19d04c52c34742a873e017b61b9ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

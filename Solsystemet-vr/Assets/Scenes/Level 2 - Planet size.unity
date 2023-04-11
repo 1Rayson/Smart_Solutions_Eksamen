@@ -1267,7 +1267,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: fb64e51162772fb47b0bc43e22a172a9, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 41f5f1015689f5949b6163ceb521ab77, type: 2}
+      objectReference: {fileID: 2100000, guid: 7fa19d04c52c34742a873e017b61b9ba, type: 2}
     - target: {fileID: 919132149155446097, guid: fb64e51162772fb47b0bc43e22a172a9, type: 3}
       propertyPath: m_Name
       value: venus
@@ -19388,7 +19388,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a44bedcc76264c341853e7c5b84d535c, type: 2}
+  - {fileID: 2100000, guid: eb37f73a98e383c46ac156404d014977, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22373,7 +22373,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 2fac5811424b41e43b90c47dba5a3ad9, type: 2}
+  - {fileID: 2100000, guid: 7fa19d04c52c34742a873e017b61b9ba, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
